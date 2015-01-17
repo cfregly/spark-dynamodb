@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.databricks"
+		module="spark-dynamodb_2.10"
+		revision="0.1"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150117130310"/>
+	<dependencies>
+		<module organisation="org.scalatest" name="scalatest_2.10">
+			<revision name="2.2.1" status="release" pubdate="20140801025744" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="54">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4582" time="0" location="/Users/cfregly/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-2.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.pom"/>
+				<caller organisation="com.databricks" name="spark-dynamodb_2.10" conf="test, compile, runtime" rev="2.2.1" rev-constraint-default="2.2.1" rev-constraint-dynamic="2.2.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scalatest_2.10" type="bundle" ext="jar" status="no" details="" size="7491143" time="0" location="/Users/cfregly/.ivy2/cache/org.scalatest/scalatest_2.10/bundles/scalatest_2.10-2.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.2.1/scalatest_2.10-2.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.4" status="release" pubdate="20140318144707" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="55">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2829" time="0" location="/Users/cfregly/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.2.1"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3203471" time="0" location="/Users/cfregly/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk">
+			<revision name="1.9.15" status="release" pubdate="20150115131641" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<metadata-artifact status="no" details="" size="9497" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk/1.9.15/aws-java-sdk-1.9.15.pom"/>
+				<caller organisation="com.databricks" name="spark-dynamodb_2.10" conf="test, compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="aws-java-sdk" type="jar" ext="jar" status="no" details="" size="2203" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk/jars/aws-java-sdk-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk/1.9.15/aws-java-sdk-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-cloudhsm">
+			<revision name="1.9.15" status="release" pubdate="20150115131625" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="53">
+				<metadata-artifact status="no" details="" size="2877" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudhsm/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudhsm/1.9.15/aws-java-sdk-cloudhsm-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-cloudhsm" type="jar" ext="jar" status="no" details="" size="167456" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudhsm/jars/aws-java-sdk-cloudhsm-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudhsm/1.9.15/aws-java-sdk-cloudhsm-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-ecs">
+			<revision name="1.9.15" status="release" pubdate="20150115131735" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="52">
+				<metadata-artifact status="no" details="" size="2895" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-ecs/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ecs/1.9.15/aws-java-sdk-ecs-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-ecs" type="jar" ext="jar" status="no" details="" size="241008" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-ecs/jars/aws-java-sdk-ecs-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ecs/1.9.15/aws-java-sdk-ecs-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-lambda">
+			<revision name="1.9.15" status="release" pubdate="20150115131557" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="51">
+				<metadata-artifact status="no" details="" size="2872" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-lambda/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-lambda/1.9.15/aws-java-sdk-lambda-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-lambda" type="jar" ext="jar" status="no" details="" size="139461" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-lambda/jars/aws-java-sdk-lambda-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-lambda/1.9.15/aws-java-sdk-lambda-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-config">
+			<revision name="1.9.15" status="release" pubdate="20150115131510" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="50">
+				<metadata-artifact status="no" details="" size="2872" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-config/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-config/1.9.15/aws-java-sdk-config-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-config" type="jar" ext="jar" status="no" details="" size="160144" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-config/jars/aws-java-sdk-config-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-config/1.9.15/aws-java-sdk-config-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-codedeploy">
+			<revision name="1.9.15" status="release" pubdate="20150115131629" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="49">
+				<metadata-artifact status="no" details="" size="2888" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-codedeploy/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-codedeploy/1.9.15/aws-java-sdk-codedeploy-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-codedeploy" type="jar" ext="jar" status="no" details="" size="369421" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-codedeploy/jars/aws-java-sdk-codedeploy-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-codedeploy/1.9.15/aws-java-sdk-codedeploy-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-swf-libraries">
+			<revision name="1.9.15" status="release" pubdate="20150115131748" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="48">
+				<metadata-artifact status="no" details="" size="3813" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-swf-libraries/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-swf-libraries/1.9.15/aws-java-sdk-swf-libraries-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-swf-libraries" type="jar" ext="jar" status="no" details="" size="510243" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-swf-libraries/jars/aws-java-sdk-swf-libraries-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-swf-libraries/1.9.15/aws-java-sdk-swf-libraries-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-cloudwatchmetrics">
+			<revision name="1.9.15" status="release" pubdate="20150115131806" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="47">
+				<metadata-artifact status="no" details="" size="3045" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudwatchmetrics/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudwatchmetrics/1.9.15/aws-java-sdk-cloudwatchmetrics-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-cloudwatchmetrics" type="jar" ext="jar" status="no" details="" size="46053" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudwatchmetrics/jars/aws-java-sdk-cloudwatchmetrics-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudwatchmetrics/1.9.15/aws-java-sdk-cloudwatchmetrics-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-cloudsearch">
+			<revision name="1.9.15" status="release" pubdate="20150115131539" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="46">
+				<metadata-artifact status="no" details="" size="2898" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudsearch/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudsearch/1.9.15/aws-java-sdk-cloudsearch-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-cloudsearch" type="jar" ext="jar" status="no" details="" size="639478" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudsearch/jars/aws-java-sdk-cloudsearch-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudsearch/1.9.15/aws-java-sdk-cloudsearch-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-autoscaling">
+			<revision name="1.9.15" status="release" pubdate="20150115131658" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="45">
+				<metadata-artifact status="no" details="" size="2886" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-autoscaling/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-autoscaling/1.9.15/aws-java-sdk-autoscaling-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-autoscaling" type="jar" ext="jar" status="no" details="" size="423262" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-autoscaling/jars/aws-java-sdk-autoscaling-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-autoscaling/1.9.15/aws-java-sdk-autoscaling-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-ses">
+			<revision name="1.9.15" status="release" pubdate="20150115131545" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="44">
+				<metadata-artifact status="no" details="" size="2993" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-ses/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ses/1.9.15/aws-java-sdk-ses-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-ses" type="jar" ext="jar" status="no" details="" size="178927" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-ses/jars/aws-java-sdk-ses-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ses/1.9.15/aws-java-sdk-ses-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-opsworks">
+			<revision name="1.9.15" status="release" pubdate="20150115131631" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="43">
+				<metadata-artifact status="no" details="" size="2880" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-opsworks/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-opsworks/1.9.15/aws-java-sdk-opsworks-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-opsworks" type="jar" ext="jar" status="no" details="" size="670011" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-opsworks/jars/aws-java-sdk-opsworks-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-opsworks/1.9.15/aws-java-sdk-opsworks-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-kinesis">
+			<revision name="1.9.15" status="release" pubdate="20150115131632" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="42">
+				<metadata-artifact status="no" details="" size="2882" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-kinesis/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kinesis/1.9.15/aws-java-sdk-kinesis-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-kinesis" type="jar" ext="jar" status="no" details="" size="142571" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-kinesis/jars/aws-java-sdk-kinesis-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kinesis/1.9.15/aws-java-sdk-kinesis-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-cloudfront">
+			<revision name="1.9.15" status="release" pubdate="20150115131622" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="41">
+				<metadata-artifact status="no" details="" size="2894" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudfront/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudfront/1.9.15/aws-java-sdk-cloudfront-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-cloudfront" type="jar" ext="jar" status="no" details="" size="729267" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudfront/jars/aws-java-sdk-cloudfront-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudfront/1.9.15/aws-java-sdk-cloudfront-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-cloudformation">
+			<revision name="1.9.15" status="release" pubdate="20150115131532" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="40">
+				<metadata-artifact status="no" details="" size="2904" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudformation/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudformation/1.9.15/aws-java-sdk-cloudformation-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-cloudformation" type="jar" ext="jar" status="no" details="" size="195594" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudformation/jars/aws-java-sdk-cloudformation-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudformation/1.9.15/aws-java-sdk-cloudformation-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-directconnect">
+			<revision name="1.9.15" status="release" pubdate="20150115131655" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="39">
+				<metadata-artifact status="no" details="" size="2902" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-directconnect/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-directconnect/1.9.15/aws-java-sdk-directconnect-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-directconnect" type="jar" ext="jar" status="no" details="" size="230237" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-directconnect/jars/aws-java-sdk-directconnect-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-directconnect/1.9.15/aws-java-sdk-directconnect-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-cognitosync">
+			<revision name="1.9.15" status="release" pubdate="20150115131535" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="38">
+				<metadata-artifact status="no" details="" size="2900" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cognitosync/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cognitosync/1.9.15/aws-java-sdk-cognitosync-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-cognitosync" type="jar" ext="jar" status="no" details="" size="173760" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cognitosync/jars/aws-java-sdk-cognitosync-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cognitosync/1.9.15/aws-java-sdk-cognitosync-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-cognitoidentity">
+			<revision name="1.9.15" status="release" pubdate="20150115131622" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="37">
+				<metadata-artifact status="no" details="" size="2916" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cognitoidentity/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cognitoidentity/1.9.15/aws-java-sdk-cognitoidentity-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-cognitoidentity" type="jar" ext="jar" status="no" details="" size="148053" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cognitoidentity/jars/aws-java-sdk-cognitoidentity-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cognitoidentity/1.9.15/aws-java-sdk-cognitoidentity-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-logs">
+			<revision name="1.9.15" status="release" pubdate="20150115131505" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="36">
+				<metadata-artifact status="no" details="" size="2892" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-logs/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-logs/1.9.15/aws-java-sdk-logs-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-logs" type="jar" ext="jar" status="no" details="" size="145868" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-logs/jars/aws-java-sdk-logs-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-logs/1.9.15/aws-java-sdk-logs-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-cloudwatch">
+			<revision name="1.9.15" status="release" pubdate="20150115131807" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="35">
+				<metadata-artifact status="no" details="" size="2894" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudwatch/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudwatch/1.9.15/aws-java-sdk-cloudwatch-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cloudwatchmetrics" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-cloudwatch" type="jar" ext="jar" status="no" details="" size="142272" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudwatch/jars/aws-java-sdk-cloudwatch-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudwatch/1.9.15/aws-java-sdk-cloudwatch-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-cloudtrail">
+			<revision name="1.9.15" status="release" pubdate="20150115131737" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="34">
+				<metadata-artifact status="no" details="" size="2888" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudtrail/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudtrail/1.9.15/aws-java-sdk-cloudtrail-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-cloudtrail" type="jar" ext="jar" status="no" details="" size="93330" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudtrail/jars/aws-java-sdk-cloudtrail-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-cloudtrail/1.9.15/aws-java-sdk-cloudtrail-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-dynamodb">
+			<revision name="1.9.15" status="release" pubdate="20150115131803" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="33">
+				<metadata-artifact status="no" details="" size="2884" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-dynamodb/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.9.15/aws-java-sdk-dynamodb-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cloudwatchmetrics" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-dynamodb" type="jar" ext="jar" status="no" details="" size="622944" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-dynamodb/jars/aws-java-sdk-dynamodb-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.9.15/aws-java-sdk-dynamodb-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-ec2">
+			<revision name="1.9.15" status="release" pubdate="20150115131523" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="32">
+				<metadata-artifact status="no" details="" size="2866" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-ec2/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.9.15/aws-java-sdk-ec2-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-ec2" type="jar" ext="jar" status="no" details="" size="1757660" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-ec2/jars/aws-java-sdk-ec2-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.9.15/aws-java-sdk-ec2-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-elastictranscoder">
+			<revision name="1.9.15" status="release" pubdate="20150115131725" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="31">
+				<metadata-artifact status="no" details="" size="2924" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-elastictranscoder/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-elastictranscoder/1.9.15/aws-java-sdk-elastictranscoder-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-elastictranscoder" type="jar" ext="jar" status="no" details="" size="294890" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-elastictranscoder/jars/aws-java-sdk-elastictranscoder-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-elastictranscoder/1.9.15/aws-java-sdk-elastictranscoder-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-elasticache">
+			<revision name="1.9.15" status="release" pubdate="20150115131600" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="30">
+				<metadata-artifact status="no" details="" size="2898" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-elasticache/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-elasticache/1.9.15/aws-java-sdk-elasticache-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-elasticache" type="jar" ext="jar" status="no" details="" size="423897" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-elasticache/jars/aws-java-sdk-elasticache-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-elasticache/1.9.15/aws-java-sdk-elasticache-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-emr">
+			<revision name="1.9.15" status="release" pubdate="20150115131503" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="29">
+				<metadata-artifact status="no" details="" size="2880" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-emr/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-emr/1.9.15/aws-java-sdk-emr-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-emr" type="jar" ext="jar" status="no" details="" size="351556" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-emr/jars/aws-java-sdk-emr-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-emr/1.9.15/aws-java-sdk-emr-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-elasticloadbalancing">
+			<revision name="1.9.15" status="release" pubdate="20150115131627" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="28">
+				<metadata-artifact status="no" details="" size="2924" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-elasticloadbalancing/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-elasticloadbalancing/1.9.15/aws-java-sdk-elasticloadbalancing-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-elasticloadbalancing" type="jar" ext="jar" status="no" details="" size="351577" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-elasticloadbalancing/jars/aws-java-sdk-elasticloadbalancing-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-elasticloadbalancing/1.9.15/aws-java-sdk-elasticloadbalancing-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-datapipeline">
+			<revision name="1.9.15" status="release" pubdate="20150115131645" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="27">
+				<metadata-artifact status="no" details="" size="2898" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-datapipeline/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-datapipeline/1.9.15/aws-java-sdk-datapipeline-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-datapipeline" type="jar" ext="jar" status="no" details="" size="203419" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-datapipeline/jars/aws-java-sdk-datapipeline-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-datapipeline/1.9.15/aws-java-sdk-datapipeline-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-iam">
+			<revision name="1.9.15" status="release" pubdate="20150115131618" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="26">
+				<metadata-artifact status="no" details="" size="2887" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-iam/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-iam/1.9.15/aws-java-sdk-iam-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-iam" type="jar" ext="jar" status="no" details="" size="670186" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-iam/jars/aws-java-sdk-iam-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-iam/1.9.15/aws-java-sdk-iam-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-glacier">
+			<revision name="1.9.15" status="release" pubdate="20150115131519" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="24">
+				<metadata-artifact status="no" details="" size="3166" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-glacier/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-glacier/1.9.15/aws-java-sdk-glacier-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-glacier" type="jar" ext="jar" status="no" details="" size="271254" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-glacier/jars/aws-java-sdk-glacier-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-glacier/1.9.15/aws-java-sdk-glacier-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-sns">
+			<revision name="1.9.15" status="release" pubdate="20150115131646" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="25">
+				<metadata-artifact status="no" details="" size="2881" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-sns/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sns/1.9.15/aws-java-sdk-sns-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-glacier" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-sns" type="jar" ext="jar" status="no" details="" size="219045" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-sns/jars/aws-java-sdk-sns-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sns/1.9.15/aws-java-sdk-sns-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-elasticbeanstalk">
+			<revision name="1.9.15" status="release" pubdate="20150115131633" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="23">
+				<metadata-artifact status="no" details="" size="2914" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-elasticbeanstalk/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-elasticbeanstalk/1.9.15/aws-java-sdk-elasticbeanstalk-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-elasticbeanstalk" type="jar" ext="jar" status="no" details="" size="353460" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-elasticbeanstalk/jars/aws-java-sdk-elasticbeanstalk-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-elasticbeanstalk/1.9.15/aws-java-sdk-elasticbeanstalk-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-redshift">
+			<revision name="1.9.15" status="release" pubdate="20150115131648" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="22">
+				<metadata-artifact status="no" details="" size="2886" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-redshift/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.9.15/aws-java-sdk-redshift-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-redshift" type="jar" ext="jar" status="no" details="" size="650060" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-redshift/jars/aws-java-sdk-redshift-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.9.15/aws-java-sdk-redshift-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-rds">
+			<revision name="1.9.15" status="release" pubdate="20150115131452" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="21">
+				<metadata-artifact status="no" details="" size="2882" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-rds/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-rds/1.9.15/aws-java-sdk-rds-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-rds" type="jar" ext="jar" status="no" details="" size="663319" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-rds/jars/aws-java-sdk-rds-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-rds/1.9.15/aws-java-sdk-rds-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-sqs">
+			<revision name="1.9.15" status="release" pubdate="20150115131620" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="20">
+				<metadata-artifact status="no" details="" size="2875" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-sqs/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.9.15/aws-java-sdk-sqs-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-glacier" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-sns" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-sqs" type="jar" ext="jar" status="no" details="" size="238686" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-sqs/jars/aws-java-sdk-sqs-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.9.15/aws-java-sdk-sqs-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-sts">
+			<revision name="1.9.15" status="release" pubdate="20150115131547" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="19">
+				<metadata-artifact status="no" details="" size="2871" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-sts/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sts/1.9.15/aws-java-sdk-sts-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-sts" type="jar" ext="jar" status="no" details="" size="92274" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-sts/jars/aws-java-sdk-sts-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sts/1.9.15/aws-java-sdk-sts-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-importexport">
+			<revision name="1.9.15" status="release" pubdate="20150115131602" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="18">
+				<metadata-artifact status="no" details="" size="2898" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-importexport/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-importexport/1.9.15/aws-java-sdk-importexport-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-importexport" type="jar" ext="jar" status="no" details="" size="79187" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-importexport/jars/aws-java-sdk-importexport-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-importexport/1.9.15/aws-java-sdk-importexport-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-s3">
+			<revision name="1.9.15" status="release" pubdate="20150115131750" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="16">
+				<metadata-artifact status="no" details="" size="2873" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-s3/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.9.15/aws-java-sdk-s3-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-glacier" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-dynamodb" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-s3" type="jar" ext="jar" status="no" details="" size="538579" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-s3/jars/aws-java-sdk-s3-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.9.15/aws-java-sdk-s3-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-kms">
+			<revision name="1.9.15" status="release" pubdate="20150115131804" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="17">
+				<metadata-artifact status="no" details="" size="2871" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-kms/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.9.15/aws-java-sdk-kms-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-s3" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-kms" type="jar" ext="jar" status="no" details="" size="244109" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-kms/jars/aws-java-sdk-kms-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.9.15/aws-java-sdk-kms-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-route53">
+			<revision name="1.9.15" status="release" pubdate="20150115131728" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="15">
+				<metadata-artifact status="no" details="" size="2882" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-route53/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-route53/1.9.15/aws-java-sdk-route53-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-route53" type="jar" ext="jar" status="no" details="" size="557452" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-route53/jars/aws-java-sdk-route53-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-route53/1.9.15/aws-java-sdk-route53-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-storagegateway">
+			<revision name="1.9.15" status="release" pubdate="20150115131617" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="14">
+				<metadata-artifact status="no" details="" size="2906" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-storagegateway/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-storagegateway/1.9.15/aws-java-sdk-storagegateway-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-storagegateway" type="jar" ext="jar" status="no" details="" size="502939" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-storagegateway/jars/aws-java-sdk-storagegateway-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-storagegateway/1.9.15/aws-java-sdk-storagegateway-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-simpleworkflow">
+			<revision name="1.9.15" status="release" pubdate="20150115131543" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="13">
+				<metadata-artifact status="no" details="" size="2900" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-simpleworkflow/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-simpleworkflow/1.9.15/aws-java-sdk-simpleworkflow-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-swf-libraries" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-simpleworkflow" type="jar" ext="jar" status="no" details="" size="562536" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-simpleworkflow/jars/aws-java-sdk-simpleworkflow-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-simpleworkflow/1.9.15/aws-java-sdk-simpleworkflow-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-simpledb">
+			<revision name="1.9.15" status="release" pubdate="20150115131609" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="12">
+				<metadata-artifact status="no" details="" size="2886" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-simpledb/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.9.15/aws-java-sdk-simpledb-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-simpledb" type="jar" ext="jar" status="no" details="" size="125832" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-simpledb/jars/aws-java-sdk-simpledb-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.9.15/aws-java-sdk-simpledb-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-support">
+			<revision name="1.9.15" status="release" pubdate="20150115131614" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="2">
+				<metadata-artifact status="no" details="" size="2876" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-support/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-support/1.9.15/aws-java-sdk-support-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-support" type="jar" ext="jar" status="no" details="" size="208018" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-support/jars/aws-java-sdk-support-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-support/1.9.15/aws-java-sdk-support-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.amazonaws" name="aws-java-sdk-core">
+			<revision name="1.9.15" status="release" pubdate="20150115131638" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="3">
+				<metadata-artifact status="no" details="" size="3407" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-core/ivy-1.9.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.9.15/aws-java-sdk-core-1.9.15.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-sqs" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-emr" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-config" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-kms" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cloudhsm" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-route53" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-storagegateway" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-elastictranscoder" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-support" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-kinesis" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cloudtrail" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cloudfront" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cloudwatch" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cognitosync" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-codedeploy" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-importexport" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-directconnect" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-opsworks" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-ecs" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-simpleworkflow" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-simpledb" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-rds" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-logs" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cloudsearch" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-elasticloadbalancing" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-ec2" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-sts" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-redshift" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-lambda" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-datapipeline" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-ses" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cognitoidentity" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-elasticbeanstalk" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-elasticache" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-autoscaling" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-cloudformation" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-iam" conf="compile, runtime" rev="1.9.15" rev-constraint-default="1.9.15" rev-constraint-dynamic="1.9.15" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="aws-java-sdk-core" type="jar" ext="jar" status="no" details="" size="480255" time="0" location="/Users/cfregly/.ivy2/cache/com.amazonaws/aws-java-sdk-core/jars/aws-java-sdk-core-1.9.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.9.15/aws-java-sdk-core-1.9.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.7" status="release" pubdate="20150111165125" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="11">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6448" time="0" location="/Users/cfregly/.ivy2/cache/joda-time/joda-time/ivy-2.7.xml" searched="true" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-core" conf="compile, runtime" rev="[2.2,)" rev-constraint-default="[2.2,)" rev-constraint-dynamic="[2.2,)" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="589289" time="0" location="/Users/cfregly/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.3.2" status="release" pubdate="20140301191312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="8">
+				<metadata-artifact status="no" details="" size="7223" time="0" location="/Users/cfregly/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-core" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="915096" time="0" location="/Users/cfregly/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.3.2" status="release" pubdate="20140228173828" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="10">
+				<metadata-artifact status="no" details="" size="5473" time="0" location="/Users/cfregly/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="199553" time="0" location="/Users/cfregly/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.3.0" status="release" pubdate="20131113205645" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="9">
+				<metadata-artifact status="no" details="" size="4805" time="0" location="/Users/cfregly/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.3.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="2.3.2"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="35058" time="0" location="/Users/cfregly/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.3.4" status="release" pubdate="20140531081950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="5">
+				<metadata-artifact status="no" details="" size="10368" time="0" location="/Users/cfregly/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.3.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.4/httpclient-4.3.4.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-core" conf="compile, runtime" rev="4.3.4" rev-constraint-default="4.3.4" rev-constraint-dynamic="4.3.4" callerrev="1.9.15"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="590004" time="0" location="/Users/cfregly/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.3.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.4/httpclient-4.3.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.6" status="release" pubdate="20111202183826" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/codec/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="7">
+				<metadata-artifact status="no" details="" size="7555" time="0" location="/Users/cfregly/.ivy2/cache/commons-codec/commons-codec/ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.3.4"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="232771" time="0" location="/Users/cfregly/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.3.2" status="release" pubdate="20140212124411" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="6">
+				<metadata-artifact status="no" details="" size="7525" time="0" location="/Users/cfregly/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.3.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.3.2" rev-constraint-default="4.3.2" rev-constraint-dynamic="4.3.2" callerrev="4.3.4"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="282269" time="0" location="/Users/cfregly/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.3.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.3" status="release" pubdate="20130516130523" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="4">
+				<metadata-artifact status="no" details="" size="10079" time="0" location="/Users/cfregly/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom"/>
+				<caller organisation="com.amazonaws" name="aws-java-sdk-core" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.9.15"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="4.3.4"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="62050" time="0" location="/Users/cfregly/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.4" status="release" pubdate="20140318144629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2669" time="0" location="/Users/cfregly/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.10.4"/>
+				<caller organisation="org.scalatest" name="scalatest_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.2.1"/>
+				<caller organisation="com.databricks" name="spark-dynamodb_2.10" conf="test, compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/Users/cfregly/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
