@@ -22,9 +22,9 @@ import org.apache.spark.sql.api.java.JavaSchemaRDD;
  * A collection of static functions for working with DynamoDB in Spark SQL
  */
 public class DynamoDBUtils {
-    /** Returns a Schema RDD for the given DynamoDB info. */
-    public static JavaSchemaRDD dynamoDB(JavaSQLContext sqlContext, String path) {
-        DynamoDBRelation = new DynamoDBRelation(path, sqlContext.sqlContext());
+    /** Returns a Schema RDD for the given DynamoDB info (region and table). */
+    public static JavaSchemaRDD dynamoDB(JavaSQLContext sqlContext, String region, String table) {
+        DynamoDBRelation relation = new DynamoDBRelation(region, table, sqlContext.sqlContext());
         return sqlContext.baseRelationToSchemaRDD(relation);
     }
 }

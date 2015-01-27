@@ -15,7 +15,9 @@
  */
 package com.databricks.spark
 
-import org.apache.spark.sql.{SQLContext, SchemaRDD}
+import org.apache.spark.annotation.AlphaComponent
+import org.apache.spark.sql.SQLContext
+import org.apache.spark.sql.SchemaRDD
 
 package object dynamodb {
 
@@ -23,11 +25,19 @@ package object dynamodb {
    * Adds a method, `dynamoDB`, to SQLContext that allows reading data stored in DynamoDB.
    */
   implicit class DynamoDBContext(sqlContext: SQLContext) {
-    def dynamoDB(URL: String) =
-      sqlContext.baseRelationToSchemaRDD(AvroRelation(URL)(sqlContext))
+	/**
+	 * @param region (ie. us-east-1, us-west-2, etc)
+	 * @param unique table name within the region
+	 */
+    def dynamoDB(region: String, table: String) = {
+      sqlContext.baseRelationToSchemaRDD(DynamoDBRelation(region, table)(sqlContext))
+    }
   }
 
   // TODO: Implement me.
-  //implicit class DynamoDBSchemaRDD(schemaRDD: SchemaRDD) {
-  //}
+  implicit class DynamoDBSchemaRDD(schemaRDD: SchemaRDD) {
+	def saveAsDynamoDB(path: String): Unit = {
+	  ???
+	}
+  }
 }

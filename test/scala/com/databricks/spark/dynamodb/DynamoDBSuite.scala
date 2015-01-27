@@ -15,25 +15,24 @@
  */
 package com.databricks.spark.dynamodb
 
-import org.apache.spark.sql.test._
+import java.util.HashMap
 import org.scalatest.FunSuite
-import TestSQLContext._
-import com.amazonaws.services.dynamodbv2.util.Tables
-import com.amazonaws.services.dynamodbv2.model.CreateTableRequest
 import com.amazonaws.auth.DefaultAWSCredentialsProviderChain
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient
+import com.amazonaws.services.dynamodbv2.model.AttributeDefinition
+import com.amazonaws.services.dynamodbv2.model.AttributeValue
+import com.amazonaws.services.dynamodbv2.model.CreateTableRequest
+import com.amazonaws.services.dynamodbv2.model.DescribeTableRequest
 import com.amazonaws.services.dynamodbv2.model.KeySchemaElement
 import com.amazonaws.services.dynamodbv2.model.KeyType
-import com.amazonaws.services.dynamodbv2.model.DescribeTableRequest
-import com.amazonaws.services.dynamodbv2.model.PutItemRequest
-import com.amazonaws.services.dynamodbv2.model.AttributeValue
-import java.util.HashMap
-import com.amazonaws.services.dynamodbv2.model.AttributeDefinition
-import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput
+import com.amazonaws.services.dynamodbv2.model.PutItemRequest
+import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType
+import com.amazonaws.services.dynamodbv2.util.Tables
+import org.scalatest.BeforeAndAfterAll
 
-class DynamoDBSuite extends FunSuite {
-  def setup() = {
+class DynamoDBSuite extends FunSuite with BeforeAndAfterAll {
+  override def beforeAll() = {
     /*
      * The DefaultAWSCredentialsProviderChain will ... TODO
      */
@@ -42,14 +41,14 @@ class DynamoDBSuite extends FunSuite {
     // Createa a DynamoDB client
     val dynamoDB = new AmazonDynamoDBClient(credentials)
 
-    val tableName = "my-favorite-movies-table"
+    val table = "my-favorite-movies-table"
 
     // Create table if it does not exist yet
-    if (Tables.doesTableExist(dynamoDB, tableName)) {
-        System.out.println("Table " + tableName + " is already ACTIVE")
+    if (Tables.doesTableExist(dynamoDB, table)) {
+        System.out.println("Table " + table + " is already ACTIVE")
     } else {
         // Create a table with a primary hash key named 'name', which holds a string
-        val createTableRequest = new CreateTableRequest().withTableName(tableName)
+        val createTableRequest = new CreateTableRequest().withTableName(table)
             .withKeySchema(new KeySchemaElement().withAttributeName("name").withKeyType(KeyType.HASH))
             .withAttributeDefinitions(new AttributeDefinition().withAttributeName("name").withAttributeType(ScalarAttributeType.S))
             .withProvisionedThroughput(new ProvisionedThroughput().withReadCapacityUnits(1L).withWriteCapacityUnits(1L))
@@ -57,24 +56,24 @@ class DynamoDBSuite extends FunSuite {
         System.out.println("Created Table: " + createdTableDescription)
 
         // Wait for it to become active
-        System.out.println("Waiting for " + tableName + " to become ACTIVE...")
-        Tables.waitForTableToBecomeActive(dynamoDB, tableName)
+        System.out.println("Waiting for " + table + " to become ACTIVE...")
+        Tables.waitForTableToBecomeActive(dynamoDB, table)
     }
 
     // Describe our new table
-    val describeTableRequest = new DescribeTableRequest().withTableName(tableName)
+    val describeTableRequest = new DescribeTableRequest().withTableName(table)
     val tableDescription = dynamoDB.describeTable(describeTableRequest).getTable()
     System.out.println("Table Description: " + tableDescription)
 
     // Add an item:  Map<String, AttributeValue>
     var item = newItem("Bill & Ted's Excellent Adventure", 1989, "****", "James")
-    var putItemRequest = new PutItemRequest(tableName, item)
+    var putItemRequest = new PutItemRequest(table, item)
     var putItemResult = dynamoDB.putItem(putItemRequest)
     System.out.println("Result: " + putItemResult)
 
     // Add another item
     item = newItem("Airplane", 1980, "*****", "Billy Bob")
-    putItemRequest = new PutItemRequest(tableName, item)
+    putItemRequest = new PutItemRequest(table, item)
     putItemResult = dynamoDB.putItem(putItemRequest)
     System.out.println("Result: " + putItemResult)
   }

@@ -27,10 +27,10 @@ import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType
 class DefaultSource extends RelationProvider {
 
   /**
-   * Creates a new relation for data store in DynamoDB given a `location` as a parameter.
+   * Creates a new relation for data store in DynamoDB given a `region` and 'table' within that region as parameters.
    */
   def createRelation(sqlContext: SQLContext, parameters: Map[String, String]) = {
-    DynamoDBRelation(parameters("url"))(sqlContext)
+    DynamoDBRelation(parameters("region"), parameters("table"))(sqlContext)
   }
 }
 

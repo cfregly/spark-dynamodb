@@ -59,18 +59,18 @@ import com.amazonaws.services.dynamodbv2.model.TableDescription
 import com.amazonaws.services.dynamodbv2.util.Tables
 
 
-case class DynamoDBRelation(dynamoDBTable: TableDescription)(@transient val sqlContext: SQLContext) extends PrunedFilteredScan {
+case class DynamoDBRelation(region: String, table: String)(@transient val sqlContext: SQLContext) extends PrunedFilteredScan {
   /*
    * The DefaultAWSCredentialsProviderChain will ... TODO
    */
   val credentials = new DefaultAWSCredentialsProviderChain().getCredentials()
 
-  // Createa a DynamoDB client
+  // Create a DynamoDB client
   val dynamoDB = new AmazonDynamoDBClient(credentials)
-
-//        //set region??
-//        val usWest2 = Region.getRegion(Regions.US_WEST_2)
-//        dynamoDB.setRegion(usWest2)
+  dynamoDB.setRegion(Regions.fromName(region))
+  
+  // DynamoDB Table
+  val dynamoDBTable = dynamoDB.describeTable(table).getTable()
     
   // Convert the DynamoDB TableDescription into a SparkSQL StructType
   val schema: StructType = toSparkSqlSchema(dynamoDBTable) match {
