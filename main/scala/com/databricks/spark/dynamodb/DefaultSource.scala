@@ -17,15 +17,17 @@ package com.databricks.spark.dynamodb
 
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.sources.RelationProvider
+import com.amazonaws.services.dynamodbv2.model.TableDescription
+import com.amazonaws.services.dynamodbv2.model.AttributeDefinition
+import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType
 
 /**
- * Provides access to DynamoDB data from pure SQL statements (i.e. for users of the
- * JDBC server).
+ * Provides access to DynamoDB data from pure SQL statements.
  */
 class DefaultSource extends RelationProvider {
 
   /**
-   * Creates a new relation for data store in avro given a `path` as a parameter.
+   * Creates a new relation for data store in DynamoDB given a `location` as a parameter.
    */
   def createRelation(sqlContext: SQLContext, parameters: Map[String, String]) = {
     DynamoDBRelation(parameters("url"))(sqlContext)
