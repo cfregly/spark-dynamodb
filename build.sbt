@@ -8,7 +8,7 @@ scalaVersion := "2.10.4"
 
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "1.2.0" % "provided"
 
-libraryDependencies += "com.amazonaws" % "aws-java-sdk" % "1.9.15"
+libraryDependencies += "com.amazonaws" % "aws-java-sdk" % "1.9.17"
 
 publishMavenStyle := true
 
@@ -30,8 +30,8 @@ pomExtra := (
     </license>
   </licenses>
   <scm>
-    <url>git@github.com:databricks/spark-dynamodb.git</url>
-    <connection>scm:git:git@github.com:databricks/spark-dynamodb.git</connection>
+    <url>git@github.com:cfregly/spark-dynamodb.git</url>
+    <connection>scm:git:git@github.com:cfregly/spark-dynamodb.git</connection>
   </scm>
   <developers>
     <developer>
