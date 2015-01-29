@@ -30,6 +30,7 @@ import com.amazonaws.services.dynamodbv2.model.PutItemRequest
 import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType
 import com.amazonaws.services.dynamodbv2.util.Tables
 import org.scalatest.BeforeAndAfterAll
+import scala.collection.JavaConversions._
 
 class DynamoDBSuite extends FunSuite with BeforeAndAfterAll {
   override def beforeAll() = {
@@ -78,13 +79,13 @@ class DynamoDBSuite extends FunSuite with BeforeAndAfterAll {
     System.out.println("Result: " + putItemResult)
   }
 
-  def newItem(name: String, year: Integer, rating: String, fan: String): HashMap[String, AttributeValue] = {
+  def newItem(name: String, year: Integer, rating: String, fans: String*): HashMap[String, AttributeValue] = {
     val item = new HashMap[String, AttributeValue]
     item.put("name", new AttributeValue(name))
     item.put("year", new AttributeValue(Integer.toString(year)))
     item.put("rating", new AttributeValue(rating))
-    item.put("fan", new AttributeValue(fan))
-
+    item.put("fan", new AttributeValue(fans.toList))  
+    
     item  //Map<String, AttributeValue>
   }
   
