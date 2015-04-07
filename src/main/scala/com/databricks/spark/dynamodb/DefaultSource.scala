@@ -17,9 +17,6 @@ package com.databricks.spark.dynamodb
 
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.sources.RelationProvider
-import com.amazonaws.services.dynamodbv2.model.TableDescription
-import com.amazonaws.services.dynamodbv2.model.AttributeDefinition
-import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType
 
 /**
  * Provides access to DynamoDB data from pure SQL statements.
