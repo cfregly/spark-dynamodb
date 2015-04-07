@@ -15,9 +15,7 @@
  */
 package com.databricks.spark
 
-import org.apache.spark.annotation.AlphaComponent
-import org.apache.spark.sql.SQLContext
-import org.apache.spark.sql.SchemaRDD
+import org.apache.spark.sql.{DataFrame, SQLContext}
 
 package object dynamodb {
 
@@ -27,16 +25,16 @@ package object dynamodb {
   implicit class DynamoDBContext(sqlContext: SQLContext) {
 	/**
 	 * @param region (ie. us-east-1, us-west-2, etc)
-	 * @param unique table name within the region
+	 * @param table table name within the region
 	 */
     def dynamoDB(region: String, table: String) = {
-      sqlContext.baseRelationToSchemaRDD(DynamoDBRelation(region, table)(sqlContext))
+      sqlContext.baseRelationToDataFrame(DynamoDBRelation(region, table)(sqlContext))
     }
   }
 
   // TODO: Implement me.
-  implicit class DynamoDBSchemaRDD(schemaRDD: SchemaRDD) {
-	def saveAsDynamoDB(path: String): Unit = {
+  implicit class DynamoDBSchemaRDD(dataframe: DataFrame) {
+	def saveAsDynamoDB(region: String, table: String): Unit = {
 	  ???
 	}
   }

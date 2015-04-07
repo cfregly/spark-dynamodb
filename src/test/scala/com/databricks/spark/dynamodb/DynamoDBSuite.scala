@@ -88,7 +88,7 @@ class DynamoDBSuite extends FunSuite with BeforeAndAfterAll {
     
     item  //Map<String, AttributeValue>
   }
-  
+
   test("dsl test") {
   //  val results = TestSQLContext
   //    .avroFile(episodesFile)

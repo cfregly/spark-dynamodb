@@ -6,7 +6,7 @@ organization := "com.databricks"
 
 scalaVersion := "2.10.4"
 
-libraryDependencies += "org.apache.spark" %% "spark-sql" % "1.2.0" % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "1.3.0" % "provided"
 
 libraryDependencies += "com.amazonaws" % "aws-java-sdk" % "1.9.17"
 
